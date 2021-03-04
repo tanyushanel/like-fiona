@@ -1,0 +1,11 @@
+﻿/* @font-face kit by Fonts2u (https://fonts2u.com) */
+
+@font-face {
+  font-family: "Sloppy Annabelle Regular";
+  src: url("SloppyAnnabelle-Regular.eot?") format("eot"),
+    url("SloppyAnnabelle-Regular.woff") format("woff"),
+    url("SloppyAnnabelle-Regular.ttf") format("truetype"),
+    url("SloppyAnnabelle-Regular.svg#SloppyAnnabelle-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

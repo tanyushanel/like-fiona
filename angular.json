@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "like-fiona"
+    }
+  },
+  "defaultProject": "like-fiona",
+  "cli": {
+    "analytics": false
+  }
 }
