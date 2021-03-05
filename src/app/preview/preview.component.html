@@ -1,0 +1,26 @@
+<article class="preview">
+    <div class="img-container">
+        <div class="img-wrapper">
+            <img class="img-item"
+                 src="../../assets/images/big9.jpg"
+                 [class.portrait]="width < height"
+                 (load)="handleImageLoad($event)">
+        </div>
+    </div>
+
+    <div class="art-container">
+        <app-headline></app-headline>
+        <div class="art-content">
+            <p class="art-text">Write a short pitch about who you are and what you do so people know exactly what to
+                expect right from the
+                start.</p>
+            <span class="more">Learn more</span>
+        </div>
+
+    </div>
+
+
+
+
+
+</article>
