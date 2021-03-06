@@ -10,8 +10,9 @@
              src="{{ article.img }}">
         <div class="art-text">
             <p>{{ article.text }} </p>
-            <a href=""
-               class="more">Learn more</a>
+            <a [class.hidden]="article.btn === ''"
+               href=""
+               class="more">{{ article.btn }}</a>
         </div>
     </div>
 </article>

@@ -2,6 +2,7 @@
     <app-preview></app-preview>
 
     <app-article class="article"
+                 [id]="ind"
                  *ngFor="let article of articles; let ind = index"
                  [article]="article"
                  [index]="ind">

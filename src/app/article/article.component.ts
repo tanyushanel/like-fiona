@@ -6,6 +6,8 @@ export class Article {
   subTitle: string;
   text: string;
   img: string;
+  btn: string;
+  href: string;
 }
 
 @Component({

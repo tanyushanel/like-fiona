@@ -7,7 +7,7 @@
 }
 .art-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-top: 10rem;
 
   &.reverse {
@@ -22,10 +22,11 @@
   line-height: 2rem;
   font-size: 1.1rem;
   width: 25rem;
+  margin: 0;
 }
 
 .art-img {
-  margin-top: 7rem;
+  max-width: 30rem;
   width: auto;
 }
 
@@ -39,4 +40,8 @@
   border: 2px solid rgba(57, 57, 57, 1);
   text-transform: uppercase;
   margin: 1.5rem 0;
+
+  &.hidden {
+    display: none;
+  }
 }
