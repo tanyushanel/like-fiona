@@ -8,48 +8,43 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   articles = [
     {
-      title: 'content marketing',
-      subTitle: 'for sunkissed creatives',
-      text:
-        'Write a short pitch about who you are and what you do so people know exactly what to expect right from the start.',
+      title: 'hey you!',
+      subTitle: 'you are child in my head',
+      text: `You haven't walked yet Your first words have yet to be said But I swear you'll be blessed I know youre still just a dream your eyes might be green Or the bluest that I've ever seen Anyway.`,
       img: '../../assets/images/big6.jpg',
-      btn: 'learn more',
+      btn: `you'll be blessed`,
       href: '',
     },
     {
-      title: '',
-      subTitle: 'hey you!',
-      text:
-        'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Cum sociis natoque penatibus.',
+      title: `I know you're still`,
+      subTitle: 'just a dream',
+      text: `Your eyes might be green Or the bluest that I've ever seen Anyway`,
       img: '../../assets/images/big7.jpg',
-      btn: 'about me',
+      btn: `you'll be blessed`,
       href: '',
     },
     {
-      title: 'recent work',
-      subTitle: 'la-la-la',
-      text:
-        'Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec.',
+      title: 'And you',
+      subTitle: `you'll be blessed`,
+      text: `You'll have the best I promise you that I'll pick a star from the sky Pull your name from a hat I promise you that, promise you that`,
       img: '../../assets/images/big5.jpg',
-      btn: '',
+      btn: `promise you that`,
       href: '',
     },
     {
-      title: 'projects',
-      subTitle: 'the experience',
-      text:
-        'The experienceLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. ',
+      title: `you'll be blessed`,
+      subTitle: 'la-la-la',
+      text: `I need you before I'm too old To have and to hold`,
       img: '../../assets/images/big9.jpg',
-      btn: 'show gallery',
+      btn: 'To walk with you',
       href: '',
     },
     {
-      title: 'content marketing',
+      title: 'and watch you grow',
       subTitle: 'for sunkissed creatives',
-      text:
-        'Write a short pitch about who you are and what you do so people know exactly what to expect right from the start.',
+      text: `And know that you're blessed`,
       img: '../../assets/images/big10.jpg',
-      btn: 'about me',
+      btn: `you'll be blessed`,
       href: '',
     },
   ];
