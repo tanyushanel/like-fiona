@@ -1,7 +1,11 @@
 <article>
-    <app-headline [title]="article.title"
-                  [subTitle]="article.subTitle"></app-headline>
-    <div class="art-content">
+    <app-headline class="head"
+                  [title]="article.title"
+                  [subTitle]="article.subTitle"
+                  [class.right]="index % 2"
+                  [index]="index"></app-headline>
+    <div class="art-content"
+         [class.reverse]="index % 2">
         <img class="art-img"
              src="{{ article.img }}">
         <div class="art-text">

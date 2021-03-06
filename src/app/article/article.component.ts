@@ -15,6 +15,7 @@ export class Article {
 })
 export class ArticleComponent implements OnInit {
   @Input() article: Article;
+  @Input() index: number;
 
   constructor(private homeService: HomeService) {}
 

@@ -1,5 +1,9 @@
 <div class="h-container">
     <h2 class="h2"> {{ title }} </h2>
-    <div class="rotated"></div>
+    <div class="rotated"
+         [class.white]="index % 3 === 0"
+         [class.blue]="(index % 3) === 1"
+         [class.biege]="(index % 3) === 2">
+    </div>
     <span class="coursive"> {{ subTitle }} </span>
 </div>

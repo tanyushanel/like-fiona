@@ -18,12 +18,21 @@
   .rotated {
     width: 1rem;
     height: 1rem;
-    background: white;
     position: absolute;
     z-index: -1;
     left: 50%;
     transform: rotate(45deg) scale(36);
+
+    &.white {
+      background: white;
+    }
+
+    &.blue {
+      background: #e1ebf2;
+    }
+
+    &.biege {
+      background: #e8ded5;
+    }
   }
-
-
 }
