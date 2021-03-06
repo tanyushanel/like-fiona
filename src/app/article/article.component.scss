@@ -1,3 +1,10 @@
+.head {
+  position: relative;
+
+  &.right {
+    left: 45%;
+  }
+}
 .art-content {
   display: flex;
   justify-content: space-around;
