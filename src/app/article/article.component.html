@@ -1,0 +1,13 @@
+<article>
+    <app-headline [title]="article.title"
+                  [subTitle]="article.subTitle"></app-headline>
+    <div class="art-content">
+        <img class="art-img"
+             src="{{ article.img }}">
+        <div class="art-text">
+            <p>{{ article.text }} </p>
+            <a href=""
+               class="more">Learn more</a>
+        </div>
+    </div>
+</article>
