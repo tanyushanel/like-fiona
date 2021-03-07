@@ -1,5 +1,10 @@
+.preview {
+  position: relative;
+}
+
 .head {
   position: relative;
+  left: 10%;
 
   &.right {
     left: 45%;

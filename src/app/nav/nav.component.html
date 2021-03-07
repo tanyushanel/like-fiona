@@ -1,2 +1,8 @@
 <div class="nav-item"
-     *ngFor="let navItem of navItems; let ind = index"> <a href=" #{{ ind }}">{{ navItem }}</a> </div>
+     [id]="navItem"
+     *ngFor="let navItem of navItems; let ind=index"
+     (click)="getArticleIndex(ind)">
+     <a href="{{ navItem.href }}">
+          {{ navItem.title }}
+     </a>
+</div>

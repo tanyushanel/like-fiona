@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent implements OnInit {
-  navItems: string[] = ['Instagram', 'Facebook', 'Pinterest'];
+  navItems = [
+    { title: 'Instagram', href: '' },
+    { title: 'Facebook', href: '' },
+    { title: 'Pinterest', href: '' },
+  ];
   constructor() {}
 
   ngOnInit(): void {}

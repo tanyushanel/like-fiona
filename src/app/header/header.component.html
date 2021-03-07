@@ -1,4 +1,5 @@
 <h1 class="logo">Fiona</h1>
 <app-nav class="nav"
-         [navItems]="navItems">
+         [navItems]="navItems"
+         (onGetArticleIndex)="getArticleIndex($event)">
 </app-nav>

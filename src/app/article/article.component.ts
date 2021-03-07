@@ -1,4 +1,3 @@
-import { HomeService } from './../home/home.service';
 import { Component, Input, OnInit } from '@angular/core';
 
 export class Article {
@@ -19,7 +18,7 @@ export class ArticleComponent implements OnInit {
   @Input() article: Article;
   @Input() index: number;
 
-  constructor(private homeService: HomeService) {}
+  constructor() {}
 
   ngOnInit(): void {}
 }

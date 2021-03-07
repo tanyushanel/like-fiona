@@ -1,5 +1,8 @@
 <div class="home-container">
-    <app-preview></app-preview>
+    <app-preview class="preview"
+                 [index]="index"
+                 [imgSrc]="articles[index].img"></app-preview>
+
 
     <app-article class="article"
                  [id]="ind"
@@ -7,6 +10,12 @@
                  [article]="article"
                  [index]="ind">
     </app-article>
+
+
+    <app-nav class="aside"
+             [navItems]="navItems">
+
+    </app-nav>
 
 
 </div>

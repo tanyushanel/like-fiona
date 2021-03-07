@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-preview',
@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class PreviewComponent implements OnInit {
   width: string;
   height: string;
-  // @Input() imgSrc: string;
+  @Input() index: number;
+  @Input() imgSrc: string;
 
   altImgSrc =
     'https://legacyogden.com/wp-content/uploads/2015/07/No-Image-Available1.png';
@@ -20,5 +21,7 @@ export class PreviewComponent implements OnInit {
     this.height = event.target.naturalHeight;
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.imgSrc = '../../assets/images/big6.jpg';
+  }
 }

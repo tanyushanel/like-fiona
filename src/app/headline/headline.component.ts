@@ -9,6 +9,7 @@ export class HeadlineComponent implements OnInit {
   @Input() title: string;
   @Input() subTitle: string;
   @Input() index: number;
+  @Input() imgSrc: string;
 
   constructor() {}
 

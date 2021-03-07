@@ -2,7 +2,7 @@
     <div class="img-container">
         <div class="img-wrapper">
             <img class="img-item"
-                 src="../../assets/images/big9.jpg"
+                 [src]="imgSrc"
                  [class.portrait]="width < height"
                  (load)="handleImageLoad($event)">
         </div>
