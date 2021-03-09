@@ -10,9 +10,9 @@ export class HeaderComponent implements OnInit {
   navItems = [
     { title: 'Home', href: '#0' },
     { title: 'About', href: '#1' },
-    { title: 'Photos', href: '#3' },
+    { title: 'Shop', href: '#3' },
     { title: 'Details', href: '#4' },
-    { title: 'Shop', href: '#5' },
+    { title: 'Photos', href: '#5' },
     { title: 'Blog', href: '#6' },
     { title: 'Contact', href: '#7' },
   ];
