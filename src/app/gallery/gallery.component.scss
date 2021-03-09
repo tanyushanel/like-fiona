@@ -19,16 +19,23 @@
   background: #e8ded5;
 }
 
-.img {
-  display: inline-block;
-  object-fit: cover;
-  width: 20rem;
+.infinite-width {
+  display: flex;
   height: 100%;
 }
 
-.paspartu {
-  overflow: hidden;
-  height: 30rem;
-  width: 40rem;
-  white-space: nowrap;
+.img {
+  flex: 1 1 20rem;
 }
+
+.paspartu {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 30rem;
+  left: 8rem;
+  right: 8rem;
+}
+
+// .paspartu::-webkit-scrollbar {
+//   display: none;
+// }

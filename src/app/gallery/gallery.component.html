@@ -1,9 +1,11 @@
 <article class="gallery-container">
     <div class="paspartu">
+        <div class="infinite-width">
+            <img class="img"
+                 *ngFor="let img of images"
+                 src="{{ img }}">
+        </div>
 
-        <img class="img"
-             *ngFor="let img of images"
-             src="{{ img }}">
     </div>
 
 
