@@ -9,13 +9,18 @@
                  *ngFor="let article of articles; let ind = index"
                  [article]="article"
                  [index]="ind">
+
     </app-article>
 
 
     <app-nav class="aside"
+             [id]="index + 1"
              [navItems]="navItems">
 
     </app-nav>
+
+    <app-gallery class="gallery"
+                 [id]="index + 2"></app-gallery>
 
 
 </div>

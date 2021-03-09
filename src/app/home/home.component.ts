@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Article } from '../article/article.component';
 
 @Component({
   selector: 'app-home',
@@ -15,7 +16,7 @@ export class HomeComponent implements OnInit {
       href: '',
     },
   ];
-  articles = [
+  articles: Article[] = [
     {
       title: 'hey you!',
       subTitle: 'you are child in my head',

@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PreviewComponent } from './preview/preview.component';
 import { HeadlineComponent } from './headline/headline.component';
 import { ArticleComponent } from './article/article.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ArticleComponent } from './article/article.component';
     FooterComponent,
     PreviewComponent,
     HeadlineComponent,
-    ArticleComponent
+    ArticleComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
