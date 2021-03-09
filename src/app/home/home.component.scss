@@ -6,6 +6,7 @@
   font-weight: 900;
   margin: 15rem 7rem;
   padding: 2rem;
+  scroll-margin: 20rem;
 }
 
 .aside::before {
@@ -22,6 +23,16 @@
 
 .preview {
   position: sticky;
-  top: 8rem;
+  top: 0;
   height: 60vh;
+}
+
+.gallery {
+  scroll-margin: -18rem;
+}
+
+.contact {
+  display: block;
+  margin-top: 20rem;
+  scroll-margin: 15rem;
 }

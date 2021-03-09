@@ -7,14 +7,15 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   @Output() onGetArticleIndex = new EventEmitter<number>();
+
   navItems = [
     { title: 'Home', href: '#0' },
     { title: 'About', href: '#1' },
-    { title: 'Shop', href: '#3' },
-    { title: 'Details', href: '#4' },
-    { title: 'Photos', href: '#5' },
-    { title: 'Blog', href: '#6' },
-    { title: 'Contact', href: '#7' },
+    { title: 'Shop', href: '#shop' },
+    { title: 'Details', href: '#2' },
+    { title: 'Photos', href: '#gallery' },
+    { title: 'Blog', href: '#4' },
+    { title: 'Contact', href: '#contact' },
   ];
 
   constructor() {}
@@ -22,5 +23,7 @@ export class HeaderComponent implements OnInit {
   getArticleIndex(ind: number): void {
     this.onGetArticleIndex.emit(ind);
   }
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.navItems;
+  }
 }

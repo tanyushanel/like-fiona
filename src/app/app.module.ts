@@ -11,6 +11,7 @@ import { PreviewComponent } from './preview/preview.component';
 import { HeadlineComponent } from './headline/headline.component';
 import { ArticleComponent } from './article/article.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     PreviewComponent,
     HeadlineComponent,
     ArticleComponent,
-    GalleryComponent
+    GalleryComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
