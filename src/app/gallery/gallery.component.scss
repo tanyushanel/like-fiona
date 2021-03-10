@@ -46,4 +46,5 @@
 
 .scrolled {
   transform: translateX(-20rem);
+  transition: transform 700ms;
 }

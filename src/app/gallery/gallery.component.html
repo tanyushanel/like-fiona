@@ -1,7 +1,7 @@
 <article class="gallery-container">
     <div class="paspartu">
         <div class="carousel"
-             [class.scrolled]="index >= 0"
+             [class.scrolled]="index < 2"
              (click)="onScroll($event, index)">
             <img class="carousel-cell"
                  *ngFor="let img of images; let ind = index"
