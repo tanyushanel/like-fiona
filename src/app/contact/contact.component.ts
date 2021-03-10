@@ -10,7 +10,7 @@ export class ContactComponent implements OnInit {
   article: Article = {
     title: 'contact',
     subTitle: 'nice to meet you',
-    text: `Thank you for connecting`,
+    text: ``,
     img: '../../assets/images/big10.jpg',
     btn: ``,
     href: '',

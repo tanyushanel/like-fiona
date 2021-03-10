@@ -1,3 +1,26 @@
-#contact {
-  margin-top: 10rem;
+form {
+  width: 4rem;
+  height: 4rem;
+
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  z-index: 0;
+
+  p {
+    width: 60rem;
+  }
+}
+
+form::after {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  left: 10rem;
+
+  background: white;
+
+  z-index: -1;
+  transform: scale(45) rotate(45deg);
 }

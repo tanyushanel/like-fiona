@@ -1,10 +1,7 @@
 .gallery-container {
   position: relative;
   background: white;
-  margin: 0 auto;
-  width: 50rem;
-  padding: 8rem;
-  height: 30rem;
+  padding: 6rem;
 }
 
 .gallery-container::before {
@@ -15,23 +12,38 @@
   z-index: -1;
   left: 50%;
   bottom: 50%;
-  transform: scale(70) rotate(45deg);
+  transform: scale(65) rotate(45deg);
   background: #e8ded5;
 }
 
-.infinite-width {
+.paspartu {
+  -webkit-overflow-scrolling: touch;
+
+  overflow: hidden;
+}
+
+.carousel {
   display: flex;
   height: 100%;
+  margin: 2rem;
+
+  .carousel-cell {
+    margin-right: 10px;
+    flex: 1 1 20rem;
+    height: 30rem;
+  }
+
+  .carousel-cell:hover {
+    transition: transform 500ms;
+    transform: scale(1.1);
+  }
 }
 
-.img {
-  flex: 1 1 20rem;
+.zoomed {
+  transition: transform 500ms;
+  transform: scale(1.1);
 }
 
-.paspartu {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  height: 30rem;
-  left: 8rem;
-  right: 8rem;
+.scrolled {
+  transform: translateX(-20rem);
 }
