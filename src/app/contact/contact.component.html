@@ -1,8 +1,37 @@
-<app-article [article]="article"
-             [index]="7">
+<article>
+    <form [formGroup]="form"
+          (ngSubmit)=sendMessage()>
+        <div class="inp-container">
+            <h2 class="h2">{{ article.title }}</h2>
+            <span class="coursive">{{ article.subTitle }}</span>
+            <input type="text"
+                   placeholder="Name"
+                   onblur="this.placeholder='Name (required)'"
+                   onfocus="this.placeholder=''"
+                   formControlName="name"
+                   required>
+            <input type="email"
+                   placeholder="Email"
+                   onblur="this.placeholder='Email (required)'"
+                   onfocus="this.placeholder=''"
+                   formControlName="email"
+                   required>
+            <input type="text"
+                   placeholder="Subject"
+                   onblur="this.placeholder='Subject '"
+                   onfocus="this.placeholder=''"
+                   formControlName="subject">
+            <textarea type="text"
+                      placeholder="Message"
+                      onfocus="this.placeholder = ''"
+                      onblur="this.placeholder='Message'"
+                      formControlName="content">
+                    </textarea>
+            <button type="submit"
+                    class="btn"> send </button>
+        </div>
+        <div class="message"
+             [style.display]="isSent ? 'block' : 'none'"> Is sent </div>
+    </form>
 
-</app-article>
-<form>
-    <p>Thank you for connecting</p>
-    <input type="text">
-</form>
+</article>

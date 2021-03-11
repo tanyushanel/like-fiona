@@ -24,7 +24,6 @@ export class GalleryComponent implements OnInit {
 
   onToggleZoom(e: Event, ind: number): void {
     this.index = ind;
-
     this.toggleZoom.fill(false);
     this.toggleZoom[ind] = !this.toggleZoom[ind];
   }

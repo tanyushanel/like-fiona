@@ -11,10 +11,10 @@ export class HeaderComponent implements OnInit {
   navItems = [
     { title: 'Home', href: '#0' },
     { title: 'About', href: '#1' },
-    { title: 'Shop', href: '#shop' },
     { title: 'Details', href: '#2' },
+    { title: 'Blog', href: '#3' },
     { title: 'Photos', href: '#gallery' },
-    { title: 'Blog', href: '#4' },
+    { title: 'Shop', href: '#shop' },
     { title: 'Contact', href: '#contact' },
   ];
 
@@ -23,7 +23,5 @@ export class HeaderComponent implements OnInit {
   getArticleIndex(ind: number): void {
     this.onGetArticleIndex.emit(ind);
   }
-  ngOnInit(): void {
-    this.navItems;
-  }
+  ngOnInit(): void {}
 }

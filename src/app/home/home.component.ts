@@ -57,6 +57,22 @@ export class HomeComponent implements OnInit {
       btn: `you'll be blessed`,
       href: '',
     },
+    {
+      title: `you'll be blessed`,
+      subTitle: 'la-la-la',
+      text: `I need you before I'm too old To have and to hold`,
+      img: '../../assets/images/big9.jpg',
+      btn: '',
+      href: '',
+    },
+    {
+      title: 'To walk with you and watch you grow',
+      subTitle: 'm-m-m',
+      text: `And know that you're blessed`,
+      img: '../../assets/images/big10.jpg',
+      btn: `you'll be blessed`,
+      href: '',
+    },
   ];
 
   constructor() {}

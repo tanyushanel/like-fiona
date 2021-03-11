@@ -12,7 +12,7 @@ import { HeadlineComponent } from './headline/headline.component';
 import { ArticleComponent } from './article/article.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
-import { FlickityModule } from 'ngx-flickity';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,14 +25,10 @@ import { FlickityModule } from 'ngx-flickity';
     HeadlineComponent,
     ArticleComponent,
     GalleryComponent,
-    ContactComponent
+    ContactComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FlickityModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
