@@ -1,8 +1,6 @@
 import { GalleryService } from './gallery.service';
 import { Component, OnInit } from '@angular/core';
 
-import { ElementRef } from '@angular/core';
-
 @Component({
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',
@@ -11,13 +9,10 @@ import { ElementRef } from '@angular/core';
 export class GalleryComponent implements OnInit {
   images: string[] = [];
   toggleZoom: boolean[];
-  scrolled: boolean = false;
+
   index: number;
 
-  constructor(
-    private galleryService: GalleryService,
-    private elRef: ElementRef
-  ) {}
+  constructor(private galleryService: GalleryService) {}
 
   ngOnInit(): void {
     this.images = this.galleryService.images;
@@ -29,13 +24,13 @@ export class GalleryComponent implements OnInit {
 
   onToggleZoom(e: Event, ind: number): void {
     this.index = ind;
+
     this.toggleZoom.fill(false);
     this.toggleZoom[ind] = !this.toggleZoom[ind];
-    this.scrolled = false;
   }
 
-  onScroll(e: Event, ind: number): void {
-    e.stopPropagation();
-    this.images.push(this.images.shift());
+  onScroll(dir: number, ind: number): void {
+    let piece = this.images.splice(dir, 1).join();
+    dir === 0 ? this.images.push(piece) : this.images.unshift(piece);
   }
 }

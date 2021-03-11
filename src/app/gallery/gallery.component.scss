@@ -22,6 +22,28 @@
   overflow: hidden;
 }
 
+button {
+  border: none;
+  outline: none;
+  background: none;
+  color: #e8ded5;
+  font-size: 5rem;
+  position: absolute;
+  top: 45%;
+
+  &.left {
+    left: 1rem;
+  }
+
+  &.right {
+    right: 1rem;
+  }
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
 .carousel {
   display: flex;
   height: 100%;
@@ -42,9 +64,4 @@
 .zoomed {
   transition: transform 500ms;
   transform: scale(1.1);
-}
-
-.scrolled {
-  transform: translateX(-20rem);
-  transition: transform 700ms;
 }

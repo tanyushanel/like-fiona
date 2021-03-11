@@ -1,13 +1,19 @@
 <article class="gallery-container">
     <div class="paspartu">
-        <div class="carousel"
-             [class.scrolled]="index < 2"
-             (click)="onScroll($event, index)">
+        <button class="material-icons left"
+                (click)="onScroll(0, index)">
+            keyboard_arrow_left
+        </button>
+        <div class="carousel">
             <img class="carousel-cell"
                  *ngFor="let img of images; let ind = index"
                  src="{{ img }}"
                  [class.zoomed]="toggleZoom[ind]"
                  (click)="onToggleZoom($event, ind)">
         </div>
+        <button class="material-icons right"
+                (click)="onScroll(-1, index)">
+            keyboard_arrow_right
+        </button>
     </div>
 </article>
