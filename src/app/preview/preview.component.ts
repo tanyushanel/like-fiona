@@ -21,7 +21,5 @@ export class PreviewComponent implements OnInit {
     this.height = event.target.naturalHeight;
   }
 
-  ngOnInit() {
-    this.imgSrc = '../../assets/images/big6.jpg';
-  }
+  ngOnInit() {}
 }
